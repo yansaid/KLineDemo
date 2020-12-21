@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2CD86CBF259088A600A8CE0C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2CD86CBE259088A600A8CE0C /* SnapKit */; };
+		2CF73DB1259087E300FAFAE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF73DB0259087E300FAFAE1 /* AppDelegate.swift */; };
+		2CF73DB3259087E300FAFAE1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF73DB2259087E300FAFAE1 /* SceneDelegate.swift */; };
+		2CF73DB5259087E300FAFAE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF73DB4259087E300FAFAE1 /* ViewController.swift */; };
+		2CF73DB8259087E300FAFAE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CF73DB6259087E300FAFAE1 /* Main.storyboard */; };
+		2CF73DBA259087E500FAFAE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CF73DB9259087E500FAFAE1 /* Assets.xcassets */; };
+		2CF73DBD259087E500FAFAE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CF73DBB259087E500FAFAE1 /* LaunchScreen.storyboard */; };
+		2CF73DDD259087ED00FAFAE1 /* KLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF73DC6259087ED00FAFAE1 /* KLineView.swift */; };
+		2CF73DDE259087ED00FAFAE1 /* UIColorKLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF73DC8259087ED00FAFAE1 /* UIColorKLine.swift */; };
+		2CF73DDF259087ED00FAFAE1 /* KLineGlobalVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF73DC9259087ED00FAFAE1 /* KLineGlobalVariable.swift */; };
+		2CF73DE0259087ED00FAFAE1 /* WRPainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF73DCB259087ED00FAFAE1 /* WRPainter.swift */; };
+		2CF73DE1259087ED00FAFAE1 /* TimePainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF73DCC259087ED00FAFAE1 /* TimePainter.swift */; };
+		2CF73DE2259087ED00FAFAE1 /* RSIPainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF73DCD259087ED00FAFAE1 /* RSIPainter.swift */; };
+		2CF73DE3259087ED00FAFAE1 /* BOLLPainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF73DCE259087ED00FAFAE1 /* BOLLPainter.swift */; };
+		2CF73DE4259087ED00FAFAE1 /* VolPainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF73DCF259087ED00FAFAE1 /* VolPainter.swift */; };
+		2CF73DE5259087ED00FAFAE1 /* MACDPainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF73DD0259087ED00FAFAE1 /* MACDPainter.swift */; };
+		2CF73DE6259087ED00FAFAE1 /* VerticalTextPainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF73DD1259087ED00FAFAE1 /* VerticalTextPainter.swift */; };
+		2CF73DE7259087ED00FAFAE1 /* TimelinePainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF73DD2259087ED00FAFAE1 /* TimelinePainter.swift */; };
+		2CF73DE8259087ED00FAFAE1 /* Painter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF73DD3259087ED00FAFAE1 /* Painter.swift */; };
+		2CF73DE9259087ED00FAFAE1 /* CandlePainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF73DD4259087ED00FAFAE1 /* CandlePainter.swift */; };
+		2CF73DEA259087ED00FAFAE1 /* EMAPainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF73DD5259087ED00FAFAE1 /* EMAPainter.swift */; };
+		2CF73DEB259087ED00FAFAE1 /* KDJPainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF73DD6259087ED00FAFAE1 /* KDJPainter.swift */; };
+		2CF73DEC259087ED00FAFAE1 /* MAPainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF73DD7259087ED00FAFAE1 /* MAPainter.swift */; };
+		2CF73DED259087ED00FAFAE1 /* KLineMinMax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF73DD9259087ED00FAFAE1 /* KLineMinMax.swift */; };
+		2CF73DEE259087ED00FAFAE1 /* KLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF73DDA259087ED00FAFAE1 /* KLine.swift */; };
+		2CF73DEF259087ED00FAFAE1 /* KLineRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF73DDB259087ED00FAFAE1 /* KLineRoot.swift */; };
+		2CF73DF0259087ED00FAFAE1 /* KLineIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF73DDC259087ED00FAFAE1 /* KLineIndicator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2CF73DAD259087E300FAFAE1 /* KLineDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KLineDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CF73DB0259087E300FAFAE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2CF73DB2259087E300FAFAE1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2CF73DB4259087E300FAFAE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2CF73DB7259087E300FAFAE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2CF73DB9259087E500FAFAE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2CF73DBC259087E500FAFAE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2CF73DBE259087E500FAFAE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CF73DC6259087ED00FAFAE1 /* KLineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLineView.swift; sourceTree = "<group>"; };
+		2CF73DC8259087ED00FAFAE1 /* UIColorKLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorKLine.swift; sourceTree = "<group>"; };
+		2CF73DC9259087ED00FAFAE1 /* KLineGlobalVariable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLineGlobalVariable.swift; sourceTree = "<group>"; };
+		2CF73DCB259087ED00FAFAE1 /* WRPainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRPainter.swift; sourceTree = "<group>"; };
+		2CF73DCC259087ED00FAFAE1 /* TimePainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimePainter.swift; sourceTree = "<group>"; };
+		2CF73DCD259087ED00FAFAE1 /* RSIPainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSIPainter.swift; sourceTree = "<group>"; };
+		2CF73DCE259087ED00FAFAE1 /* BOLLPainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BOLLPainter.swift; sourceTree = "<group>"; };
+		2CF73DCF259087ED00FAFAE1 /* VolPainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolPainter.swift; sourceTree = "<group>"; };
+		2CF73DD0259087ED00FAFAE1 /* MACDPainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MACDPainter.swift; sourceTree = "<group>"; };
+		2CF73DD1259087ED00FAFAE1 /* VerticalTextPainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalTextPainter.swift; sourceTree = "<group>"; };
+		2CF73DD2259087ED00FAFAE1 /* TimelinePainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelinePainter.swift; sourceTree = "<group>"; };
+		2CF73DD3259087ED00FAFAE1 /* Painter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Painter.swift; sourceTree = "<group>"; };
+		2CF73DD4259087ED00FAFAE1 /* CandlePainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandlePainter.swift; sourceTree = "<group>"; };
+		2CF73DD5259087ED00FAFAE1 /* EMAPainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMAPainter.swift; sourceTree = "<group>"; };
+		2CF73DD6259087ED00FAFAE1 /* KDJPainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDJPainter.swift; sourceTree = "<group>"; };
+		2CF73DD7259087ED00FAFAE1 /* MAPainter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MAPainter.swift; sourceTree = "<group>"; };
+		2CF73DD9259087ED00FAFAE1 /* KLineMinMax.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLineMinMax.swift; sourceTree = "<group>"; };
+		2CF73DDA259087ED00FAFAE1 /* KLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLine.swift; sourceTree = "<group>"; };
+		2CF73DDB259087ED00FAFAE1 /* KLineRoot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLineRoot.swift; sourceTree = "<group>"; };
+		2CF73DDC259087ED00FAFAE1 /* KLineIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLineIndicator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2CF73DAA259087E300FAFAE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CD86CBF259088A600A8CE0C /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CF73DA4259087E300FAFAE1 = {
+			isa = PBXGroup;
+			children = (
+				2CF73DAF259087E300FAFAE1 /* KLineDemo */,
+				2CF73DAE259087E300FAFAE1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2CF73DAE259087E300FAFAE1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2CF73DAD259087E300FAFAE1 /* KLineDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2CF73DAF259087E300FAFAE1 /* KLineDemo */ = {
+			isa = PBXGroup;
+			children = (
+				2CF73DC5259087ED00FAFAE1 /* KLine */,
+				2CF73DB0259087E300FAFAE1 /* AppDelegate.swift */,
+				2CF73DB2259087E300FAFAE1 /* SceneDelegate.swift */,
+				2CF73DB4259087E300FAFAE1 /* ViewController.swift */,
+				2CF73DB6259087E300FAFAE1 /* Main.storyboard */,
+				2CF73DB9259087E500FAFAE1 /* Assets.xcassets */,
+				2CF73DBB259087E500FAFAE1 /* LaunchScreen.storyboard */,
+				2CF73DBE259087E500FAFAE1 /* Info.plist */,
+			);
+			path = KLineDemo;
+			sourceTree = "<group>";
+		};
+		2CF73DC5259087ED00FAFAE1 /* KLine */ = {
+			isa = PBXGroup;
+			children = (
+				2CF73DC6259087ED00FAFAE1 /* KLineView.swift */,
+				2CF73DC7259087ED00FAFAE1 /* Config */,
+				2CF73DCA259087ED00FAFAE1 /* Painters */,
+				2CF73DD8259087ED00FAFAE1 /* Models */,
+			);
+			path = KLine;
+			sourceTree = "<group>";
+		};
+		2CF73DC7259087ED00FAFAE1 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				2CF73DC8259087ED00FAFAE1 /* UIColorKLine.swift */,
+				2CF73DC9259087ED00FAFAE1 /* KLineGlobalVariable.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		2CF73DCA259087ED00FAFAE1 /* Painters */ = {
+			isa = PBXGroup;
+			children = (
+				2CF73DCB259087ED00FAFAE1 /* WRPainter.swift */,
+				2CF73DCC259087ED00FAFAE1 /* TimePainter.swift */,
+				2CF73DCD259087ED00FAFAE1 /* RSIPainter.swift */,
+				2CF73DCE259087ED00FAFAE1 /* BOLLPainter.swift */,
+				2CF73DCF259087ED00FAFAE1 /* VolPainter.swift */,
+				2CF73DD0259087ED00FAFAE1 /* MACDPainter.swift */,
+				2CF73DD1259087ED00FAFAE1 /* VerticalTextPainter.swift */,
+				2CF73DD2259087ED00FAFAE1 /* TimelinePainter.swift */,
+				2CF73DD3259087ED00FAFAE1 /* Painter.swift */,
+				2CF73DD4259087ED00FAFAE1 /* CandlePainter.swift */,
+				2CF73DD5259087ED00FAFAE1 /* EMAPainter.swift */,
+				2CF73DD6259087ED00FAFAE1 /* KDJPainter.swift */,
+				2CF73DD7259087ED00FAFAE1 /* MAPainter.swift */,
+			);
+			path = Painters;
+			sourceTree = "<group>";
+		};
+		2CF73DD8259087ED00FAFAE1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2CF73DD9259087ED00FAFAE1 /* KLineMinMax.swift */,
+				2CF73DDA259087ED00FAFAE1 /* KLine.swift */,
+				2CF73DDB259087ED00FAFAE1 /* KLineRoot.swift */,
+				2CF73DDC259087ED00FAFAE1 /* KLineIndicator.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2CF73DAC259087E300FAFAE1 /* KLineDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CF73DC1259087E500FAFAE1 /* Build configuration list for PBXNativeTarget "KLineDemo" */;
+			buildPhases = (
+				2CF73DA9259087E300FAFAE1 /* Sources */,
+				2CF73DAA259087E300FAFAE1 /* Frameworks */,
+				2CF73DAB259087E300FAFAE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KLineDemo;
+			packageProductDependencies = (
+				2CD86CBE259088A600A8CE0C /* SnapKit */,
+			);
+			productName = KLineDemo;
+			productReference = 2CF73DAD259087E300FAFAE1 /* KLineDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2CF73DA5259087E300FAFAE1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					2CF73DAC259087E300FAFAE1 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 2CF73DA8259087E300FAFAE1 /* Build configuration list for PBXProject "KLineDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2CF73DA4259087E300FAFAE1;
+			packageReferences = (
+				2CD86CBD259088A600A8CE0C /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
+			productRefGroup = 2CF73DAE259087E300FAFAE1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2CF73DAC259087E300FAFAE1 /* KLineDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2CF73DAB259087E300FAFAE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CF73DBD259087E500FAFAE1 /* LaunchScreen.storyboard in Resources */,
+				2CF73DBA259087E500FAFAE1 /* Assets.xcassets in Resources */,
+				2CF73DB8259087E300FAFAE1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2CF73DA9259087E300FAFAE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CF73DE5259087ED00FAFAE1 /* MACDPainter.swift in Sources */,
+				2CF73DF0259087ED00FAFAE1 /* KLineIndicator.swift in Sources */,
+				2CF73DEF259087ED00FAFAE1 /* KLineRoot.swift in Sources */,
+				2CF73DEC259087ED00FAFAE1 /* MAPainter.swift in Sources */,
+				2CF73DEB259087ED00FAFAE1 /* KDJPainter.swift in Sources */,
+				2CF73DDF259087ED00FAFAE1 /* KLineGlobalVariable.swift in Sources */,
+				2CF73DE2259087ED00FAFAE1 /* RSIPainter.swift in Sources */,
+				2CF73DED259087ED00FAFAE1 /* KLineMinMax.swift in Sources */,
+				2CF73DE0259087ED00FAFAE1 /* WRPainter.swift in Sources */,
+				2CF73DEA259087ED00FAFAE1 /* EMAPainter.swift in Sources */,
+				2CF73DE7259087ED00FAFAE1 /* TimelinePainter.swift in Sources */,
+				2CF73DDD259087ED00FAFAE1 /* KLineView.swift in Sources */,
+				2CF73DE8259087ED00FAFAE1 /* Painter.swift in Sources */,
+				2CF73DE3259087ED00FAFAE1 /* BOLLPainter.swift in Sources */,
+				2CF73DE9259087ED00FAFAE1 /* CandlePainter.swift in Sources */,
+				2CF73DDE259087ED00FAFAE1 /* UIColorKLine.swift in Sources */,
+				2CF73DE4259087ED00FAFAE1 /* VolPainter.swift in Sources */,
+				2CF73DEE259087ED00FAFAE1 /* KLine.swift in Sources */,
+				2CF73DB5259087E300FAFAE1 /* ViewController.swift in Sources */,
+				2CF73DB1259087E300FAFAE1 /* AppDelegate.swift in Sources */,
+				2CF73DE1259087ED00FAFAE1 /* TimePainter.swift in Sources */,
+				2CF73DB3259087E300FAFAE1 /* SceneDelegate.swift in Sources */,
+				2CF73DE6259087ED00FAFAE1 /* VerticalTextPainter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2CF73DB6259087E300FAFAE1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CF73DB7259087E300FAFAE1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2CF73DBB259087E500FAFAE1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CF73DBC259087E500FAFAE1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2CF73DBF259087E500FAFAE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2CF73DC0259087E500FAFAE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2CF73DC2259087E500FAFAE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KLineDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yan.KLineDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2CF73DC3259087E500FAFAE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KLineDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yan.KLineDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2CF73DA8259087E300FAFAE1 /* Build configuration list for PBXProject "KLineDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CF73DBF259087E500FAFAE1 /* Debug */,
+				2CF73DC0259087E500FAFAE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CF73DC1259087E500FAFAE1 /* Build configuration list for PBXNativeTarget "KLineDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CF73DC2259087E500FAFAE1 /* Debug */,
+				2CF73DC3259087E500FAFAE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2CD86CBD259088A600A8CE0C /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2CD86CBE259088A600A8CE0C /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2CD86CBD259088A600A8CE0C /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2CF73DA5259087E300FAFAE1 /* Project object */;
+}
